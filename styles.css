@@ -126,7 +126,7 @@ p { margin: 0 0 1em; }
 /* Gallery */
 .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .tile {
-  margin: 0; position: relative; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden;
+  margin: 0; position: relative; aspect-ratio: 940 / 788; border-radius: var(--radius); overflow: hidden;
   background: var(--navy);
 }
 .tile img { width: 100%; height: 100%; object-fit: cover; }
@@ -135,13 +135,6 @@ p { margin: 0 0 1em; }
   background: linear-gradient(transparent, rgba(1,26,58,.85));
   color: #fff; font-size: .85rem; font-weight: 500; letter-spacing: .04em;
 }
-/* Fabric-texture placeholders until real photos are added */
-.t1 { background: repeating-linear-gradient(90deg, #2a2a2a 0 6px, #1d1d1d 6px 12px); }
-.t2 { background: radial-gradient(circle at 25% 25%, #6b3b2a 0 8%, transparent 9%) 0 0/48px 48px, radial-gradient(circle at 75% 75%, #6b3b2a 0 8%, transparent 9%) 0 0/48px 48px, #7d4632; }
-.t3 { background: repeating-linear-gradient(0deg, #0c3a6b 0 22px, #08305a 22px 24px); }
-.t4 { background: repeating-linear-gradient(45deg, #b8a98f 0 3px, #a99a80 3px 6px), #b8a98f; }
-.t5 { background: repeating-linear-gradient(90deg, #3d4f45 0 14px, #34453b 14px 28px); }
-.t6 { background: repeating-linear-gradient(90deg, #f1efe9 0 18px, #1d3d66 18px 36px); }
 
 /* Reviews */
 .rating { color: var(--ink) !important; }
