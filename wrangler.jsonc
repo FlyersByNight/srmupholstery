@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers config: serves this folder as a static site.
+  "name": "srmupholstery",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "."
+  },
+  // Needed for branch preview builds ("wrangler preview").
+  "previews": {}
+}
