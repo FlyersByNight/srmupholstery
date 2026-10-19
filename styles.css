@@ -98,13 +98,16 @@ p { margin: 0 0 1em; }
 .section-head p:last-child { color: var(--muted); }
 
 /* Service cards */
-.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .card {
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
   padding: 28px 24px; transition: border-color .2s, box-shadow .2s, transform .2s;
 }
 .card:hover { border-color: var(--navy); box-shadow: 0 10px 30px rgba(2,39,84,.08); transform: translateY(-3px); }
 .card p { color: var(--muted); font-size: .95rem; margin: 0; }
+.card-list { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 8px; }
+.card-list li { position: relative; padding-left: 20px; font-weight: 500; color: var(--ink); font-size: .95rem; }
+.card-list li::before { content: ""; position: absolute; left: 0; top: .6em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
 .icon { width: 44px; height: 44px; color: var(--navy); margin-bottom: 18px; }
 
 /* About */
@@ -169,7 +172,6 @@ p { margin: 0 0 1em; }
 
 /* Responsive */
 @media (max-width: 960px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
   .about, .contact, .reviews { grid-template-columns: 1fr; }
 }
 @media (max-width: 760px) {
@@ -183,10 +185,10 @@ p { margin: 0 0 1em; }
   .nav a:not(.btn) { padding: 14px 4px; border-bottom: 1px solid var(--line); }
   .nav .btn { margin-top: 14px; text-align: center; }
   .brand img { width: 128px; }
+  .cards { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 520px) {
-  .cards { grid-template-columns: 1fr; }
   .gallery { gap: 10px; }
   .hero-actions .btn { flex: 1 1 100%; text-align: center; }
   .strap { gap: 8px; }
