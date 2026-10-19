@@ -86,7 +86,6 @@ p { margin: 0 0 1em; }
     var(--paper-alt);
 }
 .hero-inner { padding: clamp(64px, 12vw, 140px) 0 clamp(56px, 9vw, 110px); max-width: 760px; margin-left: max(16px, (100% - var(--wrap)) / 2); }
-.hero-sub { font-family: var(--serif); font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.25; color: var(--navy); margin: -.1em 0 .7em; }
 .lead { font-size: clamp(1.05rem, 2vw, 1.2rem); color: var(--muted); max-width: 46ch; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 0; }
 .strap {
